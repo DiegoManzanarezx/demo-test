@@ -31,8 +31,7 @@ npm run dev
 
 ### Result:
 
-<img width="3426" height="508" alt="image" src="https://github.com/user-attachments/assets/c2e8b383-d8b2-40d1-8953-45b175bbaf47" />
-
+<img width="3412" height="410" alt="image" src="https://github.com/user-attachments/assets/f0e2d643-3621-4f32-a4ef-ba4585cea79c" />
 
 ## For easier results (only server debugging) -> for `AGT-1001`:
 
