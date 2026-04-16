@@ -48,7 +48,7 @@ export const PolicyTable: React.FC<PolicyTableProps> = ({ data }) => {
         <thead>
           <tr style={{ backgroundColor: "#f1f5f9", textAlign: "left" }}>
             <th style={{ padding: "12px" }}>Policy Number</th>
-            <th style={{ padding: "12px" }}>Insured</th>
+            <th style={{ padding: "12px" }}>Insured Name</th>
             <th style={{ padding: "12px" }}>Product</th>
             <th style={{ padding: "12px" }}>Status</th>
             <th style={{ padding: "12px", textAlign: "right" }}>
