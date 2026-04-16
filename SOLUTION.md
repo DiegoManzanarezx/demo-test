@@ -18,6 +18,9 @@ I fixed three bugs so the Book of Business page matches the behavior described i
    - Bug: the table filtered **out** active and pending policies with `p.status !== "active" && p.status !== "pending"`.
    - Fix: changed it to `p.status === "active" || p.status === "pending"` so only active and pending policies are shown.
 
+4. **Frontend column name (`PolicyTable.tsx`)**
+   - Fix: Instructions state column name should be **Insured Name** instead of the **Insured** name given in the code template. 
+     
 ## Client side preview and steps to replicat:
 
 ### Clone the repo
