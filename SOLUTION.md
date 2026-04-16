@@ -18,7 +18,25 @@ I fixed three bugs so the Book of Business page matches the behavior described i
    - Bug: the table filtered **out** active and pending policies with `p.status !== "active" && p.status !== "pending"`.
    - Fix: changed it to `p.status === "active" || p.status === "pending"` so only active and pending policies are shown.
 
-## Result for `AGT-1001`
+## Client side preview and steps to replicat:
+
+# Clone the repo
+git clone https://github.com/DiegoManzanarezx/demo-test.git
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+
+## For easier results (only server debugging) -> for `AGT-1001`:
+
+
+#  Use:
+
+```npx --yes ts-node -O '{"module":"commonjs"}' -e "const { getBookOfBusiness } = require('./policyService'); console.log(JSON.stringify(getBookOfBusiness('AGT-1001'), null, 2));"```
+
+# Results:
 
 {
   "agentName": "Margaret Chen",
@@ -55,6 +73,5 @@ I fixed three bugs so the Book of Business page matches the behavior described i
   "totalAnnualPremium": 15300
 }
 
-To replicate, use::
 
-```npx --yes ts-node -O '{"module":"commonjs"}' -e "const { getBookOfBusiness } = require('./policyService'); console.log(JSON.stringify(getBookOfBusiness('AGT-1001'), null, 2));"```
+
