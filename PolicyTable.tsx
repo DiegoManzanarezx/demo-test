@@ -34,7 +34,7 @@ const StatusBadge: React.FC<{ status: string }> = ({ status }) => {
 export const PolicyTable: React.FC<PolicyTableProps> = ({ data }) => {
   // Only show relevant policies — filter out anything that isn't active business
   const visiblePolicies = data.policies.filter(
-    (p) => p.status !== "active" && p.status !== "pending"
+    (p) => p.status === "active" || p.status === "pending" // The filter with AND would never be true since the status can't be not active and pending at the same time. Also we should use remove the not operator since we actually want the active or pending policies.
   );
 
   return (
