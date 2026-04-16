@@ -20,24 +20,30 @@ I fixed three bugs so the Book of Business page matches the behavior described i
 
 ## Client side preview and steps to replicat:
 
-# Clone the repo
+### Clone the repo
 git clone https://github.com/DiegoManzanarezx/demo-test.git
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Run the app
+### Run the app
 npm run dev
+
+### Result:
+
+<img width="3426" height="508" alt="image" src="https://github.com/user-attachments/assets/c2e8b383-d8b2-40d1-8953-45b175bbaf47" />
+
 
 ## For easier results (only server debugging) -> for `AGT-1001`:
 
 
-#  Use:
+###  Use:
 
 ```npx --yes ts-node -O '{"module":"commonjs"}' -e "const { getBookOfBusiness } = require('./policyService'); console.log(JSON.stringify(getBookOfBusiness('AGT-1001'), null, 2));"```
 
-# Results:
+### Results:
 
+```json
 {
   "agentName": "Margaret Chen",
   "policies": [
@@ -72,6 +78,7 @@ npm run dev
   ],
   "totalAnnualPremium": 15300
 }
+```
 
 
 
